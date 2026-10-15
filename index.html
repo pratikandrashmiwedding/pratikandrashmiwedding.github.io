@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4a001e" />
+    <meta name="description" content="Pratik and Rashmi's wedding celebration hub - 24 and 25 November 2026 in Ambaji, Gujarat." />
+    <title>Pratik & Rashmi | Wedding 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pratik and Rashmi home">
+        <span class="brand-mark">P<span>&amp;</span>R</span>
+        <span class="brand-copy"><strong>Pratik &amp; Rashmi</strong><small data-i18n="brandSubtitle">Wedding celebration</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#plan" data-i18n="navPlan">Plan</a>
+        <a href="#celebrate" data-i18n="navCelebrate">Celebrate</a>
+        <a href="#memories" data-i18n="navMemories">Memories</a>
+      </nav>
+      <label class="language-select">
+        <span class="sr-only">Language</span>
+        <select id="languageSelect" aria-label="Language">
+          <option value="en">English</option>
+          <option value="hi">हिन्दी</option>
+          <option value="gu">ગુજરાતી</option>
+        </select>
+      </label>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="eyebrow">A new chapter begins</p>
+          <h1><span>Pratik</span> <em>&amp;</em> <span>Rashmi</span></h1>
+          <p class="hero-lede" data-i18n="heroLede">Together with their families, we invite you to celebrate two beautiful days of love, laughter, and togetherness.</p>
+          <div class="hero-date"><strong>24–25</strong><span data-i18n="november">November 2026</span></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#plan" data-i18n="exploreButton">Explore the celebration</a>
+            <a class="button button-ghost" id="downloadInvite" href="assets/pratik-rashmi-invitation-english.pdf" download data-i18n="downloadInvite">Download invitation</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Wedding invitation preview">
+          <div class="art-glow"></div>
+          <img src="assets/pratik-rashmi-invitation-english.png" alt="Illustrated wedding invitation for Pratik and Rashmi" />
+          <span class="art-stamp" data-i18n="saveDate">Save the date</span>
+        </div>
+      </section>
+
+      <section class="countdown shell" aria-labelledby="countdownTitle">
+        <div>
+          <p class="eyebrow" data-i18n="countdownEyebrow">Counting down to the celebration</p>
+          <h2 id="countdownTitle" data-i18n="countdownTitle">The big days are almost here</h2>
+        </div>
+        <div class="countdown-grid" aria-live="polite">
+          <div><strong id="days">--</strong><span data-i18n="days">days</span></div>
+          <div><strong id="hours">--</strong><span data-i18n="hours">hours</span></div>
+          <div><strong id="minutes">--</strong><span data-i18n="minutes">minutes</span></div>
+          <div><strong id="seconds">--</strong><span data-i18n="seconds">seconds</span></div>
+        </div>
+      </section>
+
+      <section id="plan" class="section shell">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-i18n="beforeEyebrow">Before the wedding</p><h2 data-i18n="planTitle">Everything you need to plan your visit</h2></div>
+          <p data-i18n="planIntro">Keep the important details in one place, from the two-day schedule to the exact venue pin.</p>
+        </div>
+        <div class="card-grid three">
+          <article class="info-card schedule-card">
+            <div class="card-icon">✦</div>
+            <h3 data-i18n="scheduleTitle">Two days, one celebration</h3>
+            <div class="timeline">
+              <div><span class="timeline-date">24<br /><small>NOV</small></span><p><strong data-i18n="dayOneTitle">Day one</strong><span data-i18n="dayOneText">Family celebrations and togetherness. Detailed timings coming soon.</span></p></div>
+              <div><span class="timeline-date">25<br /><small> NOV</small></span><p><strong data-i18n="dayTwoTitle">Wedding day</strong><span data-i18n="dayTwoText">The main wedding celebration at Shakti Pathikasharm.</span></p></div>
+            </div>
+            <button class="text-button" id="calendarButton" data-i18n="addCalendar">+ Add dates to calendar</button>
+          </article>
+          <article class="info-card venue-card">
+            <div class="card-icon">⌖</div>
+            <h3 data-i18n="venueTitle">Find the venue</h3>
+            <p class="venue-name">Shakti Pathikasharm<br /><span>(Yevla Wala)</span></p>
+            <p class="muted">8VJ4+X7J, Khodiyar Chowk,<br />Ambaji, Gujarat 385110</p>
+            <div class="card-actions"><a class="button button-small" href="https://maps.app.goo.gl/5MgpwPR9U25aNY9t6" target="_blank" rel="noreferrer" data-i18n="openMaps">Open in Maps</a><a class="qr-link" href="assets/venue-map-qr.png" target="_blank" rel="noreferrer" data-i18n="viewQr">View QR</a></div>
+          </article>
+          <article class="info-card rsvp-card">
+            <div class="card-icon">♥</div>
+            <h3 data-i18n="rsvpTitle">Let us know you’re coming</h3>
+            <p data-i18n="rsvpText">RSVPs will help the family plan comfortably. The form link can be added here whenever it is ready.</p>
+            <a class="button button-small button-disabled" id="rsvpButton" href="#rsvp" data-i18n="rsvpSoon">RSVP link coming soon</a>
+            <p class="tiny" data-i18n="rsvpNote">Ask the family for the RSVP link to activate this button.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="celebrate" class="section section-dark">
+        <div class="shell">
+          <div class="section-heading light">
+            <div><p class="eyebrow" data-i18n="duringEyebrow">During the celebration</p><h2 data-i18n="celebrateTitle">Stay in the moment</h2></div>
+            <p data-i18n="celebrateIntro">Save this page to your phone for quick access to directions, timings, and updates.</p>
+          </div>
+          <div class="quick-links">
+            <a href="https://maps.app.goo.gl/5MgpwPR9U25aNY9t6" target="_blank" rel="noreferrer"><span>⌖</span><strong data-i18n="quickDirections">Directions</strong><small data-i18n="quickDirectionsText">Open the venue pin</small></a>
+            <a href="#plan"><span>◷</span><strong data-i18n="quickSchedule">Schedule</strong><small data-i18n="quickScheduleText">Check the two-day plan</small></a>
+            <a href="#contact"><span>✆</span><strong data-i18n="quickContact">Important contact</strong><small data-i18n="quickContactText">Add a family contact here</small></a>
+            <a href="#memories"><span>✧</span><strong data-i18n="quickPhotos">Photos</strong><small data-i18n="quickPhotosText">Gallery coming after the wedding</small></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="memories" class="section shell memories">
+        <div class="section-heading">
+          <div><p class="eyebrow" data-i18n="afterEyebrow">After the wedding</p><h2 data-i18n="memoriesTitle">Keep the memories close</h2></div>
+          <p data-i18n="memoriesIntro">This space is ready for a shared album, thank-you note, and favourite moments once the celebrations are over.</p>
+        </div>
+        <div class="memory-grid">
+          <article><span>01</span><h3 data-i18n="memoryOneTitle">Photo gallery</h3><p data-i18n="memoryOneText">Add a Google Photos or Drive album link here.</p></article>
+          <article><span>02</span><h3 data-i18n="memoryTwoTitle">Thank you</h3><p data-i18n="memoryTwoText">Share a personal note with everyone who joined you.</p></article>
+          <article><span>03</span><h3 data-i18n="memoryThreeTitle">Highlights</h3><p data-i18n="memoryThreeText">Collect the little stories that made the two days special.</p></article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band">
+        <div class="shell contact-inner"><div><p class="eyebrow" data-i18n="contactEyebrow">Need a hand?</p><h2 data-i18n="contactTitle">Add family contacts before sharing this page.</h2></div><p data-i18n="contactText">The structure is ready for a WhatsApp number, coordinator contact, hotel details, and any last-minute announcement.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell"><span>Pratik &amp; Rashmi</span><span data-i18n="footerText">Made with love for 24–25 November 2026</span><span>♥</span></div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
