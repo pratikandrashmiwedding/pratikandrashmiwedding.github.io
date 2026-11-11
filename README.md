@@ -14,7 +14,7 @@ Open `http://localhost:4173`.
 
 ## Included
 
-- English, Hindi, and Gujarati language switching
+- English and Hindi language switching
 - Full two-day ceremony schedule
 - Countdown and calendar download
 - Google Maps directions, QR code, and family contact
