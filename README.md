@@ -1,6 +1,6 @@
 # Pratik & Rashmi Wedding Hub
 
-Static, mobile-first wedding website for 24–25 November 2026 at Shakti Pathikasharm (Yevla Wala), Ambaji.
+Static, mobile-first wedding website for 24–25 November 2026 at Shakti Pratik Ashram, Ambaji.
 
 ## Run locally
 
@@ -12,13 +12,13 @@ python3 -m http.server 4173
 
 Open `http://localhost:4173`.
 
-## Configure before publishing
+## Included
 
-Edit `app.js`:
-
-- Set `CONFIG.rsvpUrl` to the Google Form, WhatsApp link, or other RSVP destination.
-- Replace the RSVP placeholder button behavior if a form is ready.
-- Add family contact and gallery links in `index.html`.
+- English, Hindi, and Gujarati language switching
+- Full two-day ceremony schedule
+- Countdown and calendar download
+- Google Maps directions, QR code, and family contact
+- Four-page invitation booklets in all three languages
 
 ## Publish on GitHub Pages
 

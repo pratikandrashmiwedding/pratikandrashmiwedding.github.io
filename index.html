@@ -1,134 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#4a001e" />
-    <meta name="description" content="Pratik and Rashmi's wedding celebration hub - 24 and 25 November 2026 in Ambaji, Gujarat." />
-    <title>Pratik & Rashmi | Wedding 2026</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Pratik and Rashmi home">
-        <span class="brand-mark">P<span>&amp;</span>R</span>
-        <span class="brand-copy"><strong>Pratik &amp; Rashmi</strong><small data-i18n="brandSubtitle">Wedding celebration</small></span>
-      </a>
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#plan" data-i18n="navPlan">Plan</a>
-        <a href="#celebrate" data-i18n="navCelebrate">Celebrate</a>
-        <a href="#memories" data-i18n="navMemories">Memories</a>
-      </nav>
-      <label class="language-select">
-        <span class="sr-only">Language</span>
-        <select id="languageSelect" aria-label="Language">
-          <option value="en">English</option>
-          <option value="hi">हिन्दी</option>
-          <option value="gu">ગુજરાતી</option>
-        </select>
-      </label>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#6b1628" />
+  <meta name="description" content="Pratik and Rashmi's wedding celebration — 24 and 25 November 2026 in Ambaji, Gujarat." />
+  <title>Pratik & Rashmi — Wedding 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="monogram" href="#home" aria-label="Pratik and Rashmi home"><span>P</span><i>&amp;</i><span>R</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#celebrations" data-i18n="navEvents">Events</a>
+      <a href="#venue" data-i18n="navVenue">Venue</a>
+      <a href="#invitation" data-i18n="navInvitation">Invitation</a>
+    </nav>
+    <label class="language"><span class="sr-only">Language</span><select id="languageSelect" aria-label="Choose language"><option value="en">EN</option><option value="hi">हिं</option><option value="gu">ગુ</option></select></label>
+  </header>
 
-    <main id="top">
-      <section class="hero shell">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="eyebrow">A new chapter begins</p>
-          <h1><span>Pratik</span> <em>&amp;</em> <span>Rashmi</span></h1>
-          <p class="hero-lede" data-i18n="heroLede">Together with their families, we invite you to celebrate two beautiful days of love, laughter, and togetherness.</p>
-          <div class="hero-date"><strong>24–25</strong><span data-i18n="november">November 2026</span></div>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#plan" data-i18n="exploreButton">Explore the celebration</a>
-            <a class="button button-ghost" id="downloadInvite" href="assets/pratik-rashmi-whatsapp-english-booklet.pdf" download data-i18n="downloadInvite">Download invitation</a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-art"><img src="assets/premium-wedding-hero.png" alt="Painted Indian bride and groom beneath a ceremonial arch" /></div>
+      <div class="hero-copy">
+        <p class="overline" data-i18n="heroOverline">Together with their families</p>
+        <h1><span>Pratik</span><i>&amp;</i><span>Rashmi</span></h1>
+        <p class="hero-invite" data-i18n="heroInvite">joyfully invite you to celebrate their wedding</p>
+        <div class="hero-date"><strong>24</strong><span data-i18n="november">November</span><strong>25</strong><small>2026 · AMBAJI</small></div>
+        <div class="hero-actions">
+          <a class="button primary" href="#celebrations" data-i18n="viewEvents">View celebrations</a>
+          <a class="button text-button" id="downloadInvite" href="assets/pratik-rashmi-whatsapp-english-booklet.pdf" download data-i18n="downloadCard">Download invitation ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-wrap" aria-labelledby="countdownTitle">
+      <p class="overline" data-i18n="countdownOverline">Until we celebrate together</p>
+      <h2 id="countdownTitle" data-i18n="countdownTitle">The wedding festivities begin in</h2>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span data-i18n="days">Days</span></div>
+        <div><strong id="hours">00</strong><span data-i18n="hours">Hours</span></div>
+        <div><strong id="minutes">00</strong><span data-i18n="minutes">Minutes</span></div>
+        <div><strong id="seconds">00</strong><span data-i18n="seconds">Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="events section" id="celebrations">
+      <div class="section-heading">
+        <p class="overline" data-i18n="eventsOverline">Two days of traditions and togetherness</p>
+        <h2 data-i18n="eventsTitle">The celebrations</h2>
+        <p data-i18n="eventsIntro">Join us for each cherished ritual, from the first blessing to the wedding vows.</p>
+      </div>
+      <div class="days-grid">
+        <article class="day-card">
+          <header><span>24</span><div><small data-i18n="tuesday">Tuesday</small><strong data-i18n="november2026">November 2026</strong></div></header>
+          <ol>
+            <li><time>11:00 AM</time><div><strong data-i18n="vinayak">Vinayak Pujan (Baan)</strong><span data-i18n="vinayakNote">An auspicious beginning with family blessings</span></div></li>
+            <li><time>6:30 PM</time><div><strong data-i18n="tilak">Tilak Ceremony (Sagai)</strong><span data-i18n="tilakNote">The engagement celebration</span></div></li>
+            <li><time>7:30 PM</time><div><strong data-i18n="sangeet">Ladies' Sangeet</strong><span data-i18n="sangeetNote">An evening of music, dance and joy</span></div></li>
+          </ol>
+        </article>
+        <article class="day-card featured">
+          <header><span>25</span><div><small data-i18n="wednesday">Wednesday</small><strong data-i18n="november2026">November 2026</strong></div></header>
+          <ol>
+            <li><time>11:00 AM</time><div><strong data-i18n="chakBhaat">Chak-Bhaat</strong><span data-i18n="chakNote">A traditional family ceremony</span></div></li>
+            <li><time>6:30 PM</time><div><strong data-i18n="nikasi">Nikasi & Baraat</strong><span data-i18n="nikasiNote">The groom's procession begins</span></div></li>
+            <li><time>8:00 PM</time><div><strong data-i18n="feast">Wedding & Priti Bhoj</strong><span data-i18n="feastNote">Dinner and celebrations from 8 PM onwards</span></div></li>
+            <li><time data-i18n="midnight">Midnight</time><div><strong data-i18n="rituals">Paanigrahan Sanskar</strong><span data-i18n="ritualsNote">The sacred wedding rituals</span></div></li>
+          </ol>
+        </article>
+      </div>
+      <button class="calendar-link" id="calendarButton" type="button" data-i18n="addCalendar">Add both days to calendar</button>
+    </section>
+
+    <section class="venue section" id="venue">
+      <div class="venue-panel">
+        <div class="venue-copy">
+          <p class="overline" data-i18n="venueOverline">Wedding & feast venue</p>
+          <h2 data-i18n="venueName">Shakti Pratik Ashram</h2>
+          <p data-i18n="venueAddress">Yevalavadi, Redbaba Road, Ambaji, Gujarat 385110</p>
+          <div class="venue-actions">
+            <a class="button primary" href="https://maps.app.goo.gl/5MgpwPR9U25aNY9t6" target="_blank" rel="noreferrer" data-i18n="openMaps">Open in Google Maps</a>
+            <a class="contact" href="tel:+919737607046"><span data-i18n="helpLabel">Directions & assistance</span><strong>+91 97376 07046</strong></a>
           </div>
         </div>
-        <div class="hero-art" aria-label="Wedding invitation preview">
-          <div class="art-glow"></div>
-          <img src="assets/pratik-rashmi-whatsapp-english-page-1.png" alt="Detailed illustrated wedding invitation for Pratik and Rashmi" />
-          <span class="art-stamp" data-i18n="saveDate">Save the date</span>
-        </div>
-      </section>
+        <div class="qr-card"><img src="assets/venue-map-qr.png" alt="QR code for venue directions" /><span data-i18n="scanDirections">Scan for directions</span></div>
+      </div>
+    </section>
 
-      <section class="countdown shell" aria-labelledby="countdownTitle">
-        <div>
-          <p class="eyebrow" data-i18n="countdownEyebrow">Counting down to the celebration</p>
-          <h2 id="countdownTitle" data-i18n="countdownTitle">The big days are almost here</h2>
-        </div>
-        <div class="countdown-grid" aria-live="polite">
-          <div><strong id="days">--</strong><span data-i18n="days">days</span></div>
-          <div><strong id="hours">--</strong><span data-i18n="hours">hours</span></div>
-          <div><strong id="minutes">--</strong><span data-i18n="minutes">minutes</span></div>
-          <div><strong id="seconds">--</strong><span data-i18n="seconds">seconds</span></div>
-        </div>
-      </section>
+    <section class="invitation section" id="invitation">
+      <div class="invite-art"><img src="assets/pratik-rashmi-whatsapp-english-page-1.png" alt="Pratik and Rashmi wedding invitation cover" /></div>
+      <div class="invite-copy">
+        <p class="overline" data-i18n="invitationOverline">A keepsake for your phone</p>
+        <h2 data-i18n="invitationTitle">The complete invitation</h2>
+        <p data-i18n="invitationText">Download the four-page invitation with the full schedule, venue details and map. Choose English, Hindi or Gujarati above.</p>
+        <a class="button primary" id="downloadInviteBottom" href="assets/pratik-rashmi-whatsapp-english-booklet.pdf" download data-i18n="downloadCard">Download invitation ↓</a>
+      </div>
+    </section>
 
-      <section id="plan" class="section shell">
-        <div class="section-heading">
-          <div><p class="eyebrow" data-i18n="beforeEyebrow">Before the wedding</p><h2 data-i18n="planTitle">Everything you need to plan your visit</h2></div>
-          <p data-i18n="planIntro">Keep the important details in one place, from the two-day schedule to the exact venue pin.</p>
-        </div>
-        <div class="card-grid three">
-          <article class="info-card schedule-card">
-            <div class="card-icon">✦</div>
-            <h3 data-i18n="scheduleTitle">Two days, one celebration</h3>
-            <div class="timeline">
-              <div><span class="timeline-date">24<br /><small>NOV</small></span><p><strong data-i18n="dayOneTitle">Day one</strong><span data-i18n="dayOneText">Family celebrations and togetherness. Detailed timings coming soon.</span></p></div>
-              <div><span class="timeline-date">25<br /><small> NOV</small></span><p><strong data-i18n="dayTwoTitle">Wedding day</strong><span data-i18n="dayTwoText">The main wedding celebration at Shakti Pathikasharm.</span></p></div>
-            </div>
-            <button class="text-button" id="calendarButton" data-i18n="addCalendar">+ Add dates to calendar</button>
-          </article>
-          <article class="info-card venue-card">
-            <div class="card-icon">⌖</div>
-            <h3 data-i18n="venueTitle">Find the venue</h3>
-            <p class="venue-name">Shakti Pathikasharm<br /><span>(Yevla Wala)</span></p>
-            <p class="muted">8VJ4+X7J, Khodiyar Chowk,<br />Ambaji, Gujarat 385110</p>
-            <div class="card-actions"><a class="button button-small" href="https://maps.app.goo.gl/5MgpwPR9U25aNY9t6" target="_blank" rel="noreferrer" data-i18n="openMaps">Open in Maps</a><a class="qr-link" href="assets/venue-map-qr.png" target="_blank" rel="noreferrer" data-i18n="viewQr">View QR</a></div>
-          </article>
-          <article class="info-card rsvp-card">
-            <div class="card-icon">♥</div>
-            <h3 data-i18n="rsvpTitle">Let us know you’re coming</h3>
-            <p data-i18n="rsvpText">RSVPs will help the family plan comfortably. The form link can be added here whenever it is ready.</p>
-            <a class="button button-small button-disabled" id="rsvpButton" href="#rsvp" data-i18n="rsvpSoon">RSVP link coming soon</a>
-            <p class="tiny" data-i18n="rsvpNote">Ask the family for the RSVP link to activate this button.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="celebrate" class="section section-dark">
-        <div class="shell">
-          <div class="section-heading light">
-            <div><p class="eyebrow" data-i18n="duringEyebrow">During the celebration</p><h2 data-i18n="celebrateTitle">Stay in the moment</h2></div>
-            <p data-i18n="celebrateIntro">Save this page to your phone for quick access to directions, timings, and updates.</p>
-          </div>
-          <div class="quick-links">
-            <a href="https://maps.app.goo.gl/5MgpwPR9U25aNY9t6" target="_blank" rel="noreferrer"><span>⌖</span><strong data-i18n="quickDirections">Directions</strong><small data-i18n="quickDirectionsText">Open the venue pin</small></a>
-            <a href="#plan"><span>◷</span><strong data-i18n="quickSchedule">Schedule</strong><small data-i18n="quickScheduleText">Check the two-day plan</small></a>
-            <a href="#contact"><span>✆</span><strong data-i18n="quickContact">Important contact</strong><small data-i18n="quickContactText">Add a family contact here</small></a>
-            <a href="#memories"><span>✧</span><strong data-i18n="quickPhotos">Photos</strong><small data-i18n="quickPhotosText">Gallery coming after the wedding</small></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="memories" class="section shell memories">
-        <div class="section-heading">
-          <div><p class="eyebrow" data-i18n="afterEyebrow">After the wedding</p><h2 data-i18n="memoriesTitle">Keep the memories close</h2></div>
-          <p data-i18n="memoriesIntro">This space is ready for a shared album, thank-you note, and favourite moments once the celebrations are over.</p>
-        </div>
-        <div class="memory-grid">
-          <article><span>01</span><h3 data-i18n="memoryOneTitle">Photo gallery</h3><p data-i18n="memoryOneText">Add a Google Photos or Drive album link here.</p></article>
-          <article><span>02</span><h3 data-i18n="memoryTwoTitle">Thank you</h3><p data-i18n="memoryTwoText">Share a personal note with everyone who joined you.</p></article>
-          <article><span>03</span><h3 data-i18n="memoryThreeTitle">Highlights</h3><p data-i18n="memoryThreeText">Collect the little stories that made the two days special.</p></article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-band">
-        <div class="shell contact-inner"><div><p class="eyebrow" data-i18n="contactEyebrow">Need a hand?</p><h2 data-i18n="contactTitle">Add family contacts before sharing this page.</h2></div><p data-i18n="contactText">The structure is ready for a WhatsApp number, coordinator contact, hotel details, and any last-minute announcement.</p></div>
-      </section>
-    </main>
-
-    <footer class="site-footer"><div class="shell"><span>Pratik &amp; Rashmi</span><span data-i18n="footerText">Made with love for 24–25 November 2026</span><span>♥</span></div></footer>
-    <script src="app.js"></script>
-  </body>
+    <section class="closing">
+      <div class="flourish">❦</div>
+      <p data-i18n="closingText">Your presence and blessings will make our celebration complete.</p>
+      <strong>Pratik <i>&amp;</i> Rashmi</strong>
+      <small>24–25 · 11 · 2026</small>
+    </section>
+  </main>
+  <footer><span>P &amp; R</span><span data-i18n="footer">Made with love for family and friends</span></footer>
+  <script src="app.js"></script>
+</body>
 </html>
