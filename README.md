@@ -1,6 +1,6 @@
 # Pratik & Rashmi Wedding Hub
 
-Static, mobile-first wedding website for 24–25 November 2026 at Shakti Pratik Ashram, Ambaji.
+Static, mobile-first wedding website for 24–25 November 2026 at Shakti Pathika Ashram, Ambaji.
 
 ## Run locally
 
